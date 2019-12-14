@@ -1,0 +1,285 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "dem hamster",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "SetModeAuto",
+          "slots": [
+            {
+              "name": "room",
+              "type": "ROOMS"
+            }
+          ],
+          "samples": [
+            "schalte automodus im {room} an",
+            "schalte automodus im {room} ein",
+            "schalte automodus in der {room} an",
+            "schalte automodus in der {room} ein",
+            "schalte automodus der Heizung im {room} an",
+            "schalte automodus der Heizung im {room} ein",
+            "schalte automodus der Heizung in der {room} an",
+            "schalte automodus der Heizung in der {room} ein",
+            "schalte heizung im {room} auf automatik",
+            "schalte heizung in der {room} auf automatik",
+            "aktiviere automodus im {room}",
+            "aktiviere automodus in der {room}",
+            "aktiviere automodus der Heizung im {room}",
+            "aktiviere automodus der Heizung in der {room}",
+            "aktiviere Automatik im {room}",
+            "aktiviere Automatik in der {room}",
+            "aktiviere Automatik der Heizung im {room}",
+            "aktiviere Automatik der Heizung in der {room}",
+            "heizung im {room} auf automatik",
+            "heizung in der {room} auf automatik",
+            "setze die Heizung im {room} auf automatischen modus",
+            "setze die Heizung in der {room} auf automatischen modus",
+            "setze die Heizung im {room} auf Automatik",
+            "setze die Heizung in der {room} auf Automatik"
+          ]
+        },
+        {
+          "name": "SetModeManual",
+          "slots": [
+            {
+              "name": "room",
+              "type": "ROOMS"
+            }
+          ],
+          "samples": [
+            "schalte manuellen modus im {room} an",
+            "schalte manuellen modus im {room} ein",
+            "schalte manuellen modus in der {room} an",
+            "schalte manuellen modus in der {room} ein",
+            "schalte manuellen modus der Heizung im {room} an",
+            "schalte manuellen modus der Heizung im {room} ein",
+            "schalte manuellen modus der Heizung in der {room} an",
+            "schalte manuellen modus der Heizung in der {room} ein",
+            "schalte heizung im {room} auf manuell",
+            "schalte heizung in der {room} auf manuell",
+            "aktiviere manuellen modus im {room}",
+            "aktiviere manuellen modus in der {room}",
+            "aktiviere manuellen modus der Heizung im {room}",
+            "aktiviere manuellen modus der Heizung in der {room}",
+            "heizung im {room} auf manuell",
+            "heizung in der {room} auf manuell",
+            "setze manuellen modus im {room}",
+            "setze manuellen modus in der {room}",
+            "setze manuellen modus der Heizung im {room}",
+            "setze manuellen modus der Heizung in der {room}",
+            "setze die Heizung im {room} auf manuellen modus",
+            "setze die Heizung in der {room} auf manuellen modus",
+            "setze die Heizung im {room} auf manuell",
+            "setze die Heizung in der {room} auf manuell"
+          ]
+        },
+        {
+          "name": "SwitchSocketOff",
+          "slots": [
+            {
+              "name": "socket",
+              "type": "SOCKETS"
+            },
+            {
+              "name": "room",
+              "type": "ROOMS"
+            }
+          ],
+          "samples": [
+            "schalte {socket} im {room} ab",
+            "schalte {socket} im {room} aus",
+            "schalte {socket} in der {room} ab",
+            "schalte {socket} in der {room} aus",
+            "er soll den {socket} im {room} abschalten",
+            "er soll den {socket} im {room} ausschalten",
+            "er soll den {socket} in der {room} abschalten",
+            "er soll den {socket} in der {room} ausschalten"
+          ]
+        },
+        {
+          "name": "SwitchSocketOn",
+          "slots": [
+            {
+              "name": "socket",
+              "type": "SOCKETS"
+            },
+            {
+              "name": "room",
+              "type": "ROOMS"
+            }
+          ],
+          "samples": [
+            "schalte {socket} im {room} an",
+            "schalte {socket} im {room} ein",
+            "schalte {socket} in der {room} an",
+            "schalte {socket} in der {room} ein",
+            "er soll den {socket} im {room} anschalten",
+            "er soll den {socket} im {room} einschalten",
+            "er soll den {socket} in der {room} anschalten",
+            "er soll den {socket} in der {room} einschalten"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "ROOMS",
+          "values": [
+            {
+              "id": "all",
+              "name": {
+                "value": "all",
+                "synonyms": [
+                  "Wohnung",
+                  "Apartment",
+                  "überall",
+                  "in der ganzen Wohnung",
+                  "in allen Zimmern",
+                  "Loch",
+                  "Hamterbox"
+                ]
+              }
+            },
+            {
+              "id": "kittchen",
+              "name": {
+                "value": "kittchen",
+                "synonyms": [
+                  "Küche"
+                ]
+              }
+            },
+            {
+              "id": "loggia",
+              "name": {
+                "value": "loggia",
+                "synonyms": [
+                  "Loggia",
+                  "Lotchia",
+                  "Balkon",
+                  "Terrasse"
+                ]
+              }
+            },
+            {
+              "id": "bedroom",
+              "name": {
+                "value": "bedroom",
+                "synonyms": [
+                  "Schafzimmer"
+                ]
+              }
+            },
+            {
+              "id": "bathroom",
+              "name": {
+                "value": "bathroom",
+                "synonyms": [
+                  "Bad",
+                  "Toilette",
+                  "Klo"
+                ]
+              }
+            },
+            {
+              "id": "livingroom",
+              "name": {
+                "value": "livingroom",
+                "synonyms": [
+                  "Wohnzimmer"
+                ]
+              }
+            },
+            {
+              "id": "workroom",
+              "name": {
+                "value": "workroom",
+                "synonyms": [
+                  "Arbeitszimmer",
+                  "Abstellraum",
+                  "Hobbyraum",
+                  "Projektzimmer",
+                  "Arbeitsraum"
+                ]
+              }
+            },
+            {
+              "id": "hallway",
+              "name": {
+                "value": "hallway",
+                "synonyms": [
+                  "Flur",
+                  "Korridor"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "SOCKETS",
+          "values": [
+            {
+              "id": "globe",
+              "name": {
+                "value": "globe",
+                "synonyms": [
+                  "Weltkugel",
+                  "Globus"
+                ]
+              }
+            },
+            {
+              "id": "uplighter",
+              "name": {
+                "value": "uplighter",
+                "synonyms": [
+                  "Deckenfluter",
+                  "Strahler",
+                  "eckenfluter",
+                  "Deckenflutr"
+                ]
+              }
+            },
+            {
+              "id": "desk_lamp",
+              "name": {
+                "value": "desk_lamp",
+                "synonyms": [
+                  "Schreibtischlampe",
+                  "Tischlampe",
+                  "Lampe"
+                ]
+              }
+            },
+            {
+              "id": "nightbulb",
+              "name": {
+                "value": "nightbulb",
+                "synonyms": [
+                  "Nachtlicht",
+                  "Nachtlampe",
+                  "Nachttischlampe"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
