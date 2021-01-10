@@ -20,7 +20,7 @@
           "samples": []
         },
         {
-          "name": "SetModeAuto",
+          "name": "climate.set_auto",
           "slots": [
             {
               "name": "room",
@@ -57,7 +57,7 @@
           ]
         },
         {
-          "name": "SetModeComfort",
+          "name": "climate.set_comfort",
           "slots": [
             {
               "name": "room",
@@ -77,7 +77,7 @@
           ]
         },
         {
-          "name": "SetModeBoost",
+          "name": "climate.set_boost",
           "slots": [
             {
               "name": "room",
@@ -92,7 +92,7 @@
           ]
         },
         {
-          "name": "SetTemperature",
+          "name": "climate.set_temperature",
           "slots": [
             {
               "name": "room",
@@ -111,7 +111,7 @@
           ]
         },
         {
-          "name": "SwitchSocketOff",
+          "name": "switch.socket_off",
           "slots": [
             {
               "name": "socket",
@@ -134,7 +134,7 @@
           ]
         },
         {
-          "name": "SwitchSocketOn",
+          "name": "switch.socket_on",
           "slots": [
             {
               "name": "socket",
